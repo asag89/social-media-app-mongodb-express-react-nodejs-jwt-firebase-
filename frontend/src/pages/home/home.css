@@ -1,0 +1,16 @@
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* media queries */
+@media(max-width: 1128px){
+    .main{
+        justify-content: center;
+        gap: 30px;
+    }
+}

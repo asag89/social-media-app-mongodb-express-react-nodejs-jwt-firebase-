@@ -1,0 +1,10 @@
+
+.footer{
+    margin-top: 20px;
+    color: rgb(204, 200, 200);
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}

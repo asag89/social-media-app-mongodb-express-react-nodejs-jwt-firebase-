@@ -1,0 +1,285 @@
+
+.account {
+    width: 840px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.account-top {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.account-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.account-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-info-name {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.account-settings-icon {
+    cursor: pointer;
+}
+
+.account-mail {
+    color: rgb(130, 130, 130);
+    font-weight: 400;
+}
+
+.modal-settings-container {
+    width: 700px;
+    min-height: 80vh;
+    margin: 10vh auto;
+    background-color: #fff;
+}
+
+.modal-settings {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.modal-settings-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.modal-settings-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.modal-settings-img-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal-settings-input-file {
+    display: none;
+}
+
+.modal-settings-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.modal-settings-info-container label{
+    margin-bottom: 10px;
+}
+
+.form-group:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#input-biography {
+    border: 0.5px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.modal-settings-btn {
+    width: 160px;
+    height: 35px;
+    margin-top: 20px;
+    background-color: #0095f6;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.account-follow-info {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.account-follow-info button {
+    font-size: 15px;
+}
+
+.account-follow-info span {
+    font-weight: 700;
+}
+
+.account-bio {
+    margin-top: 20px;
+}
+
+.modal-follow-container {
+    width: 350px;
+    min-height: 70vh;
+    margin: 15vh auto;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-follow-container h3 {
+    padding-top: 10px;
+}
+
+.modal-list {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.modal-user {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-user-info {
+    display: flex;
+    align-items: center;
+}
+
+.modal-user-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.modal-follow-btn {
+    width: 60px;
+    height: 35px;
+    background-color: #0095f6;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.modal-follow-btn:hover {
+    transform: scale(1.02);
+}
+
+/* media queries */
+@media (max-width: 1030px) {
+    .main-profile {
+        gap: 60px;
+        justify-content: center;
+    }
+
+    .account {
+        width: 620px;
+    }
+
+    .post-list {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 786px) {
+    .main-profile {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .account {
+        width: 380px;
+    }
+
+    .account-top {
+        flex-direction: column;
+    }
+
+    .account-info {
+        align-items: center;
+    }
+
+    .account-mail {
+        align-self: initial;
+    }
+
+    .post-list {
+        justify-content: center;
+    }
+
+    .account-posts-top {
+        gap: 20px;
+    }
+
+    .account-info-name {
+        gap: 10px;
+    }
+
+    .modal-settings-container {
+        width: 400px;
+        height: 100vh;
+        margin: 0 auto;
+    }
+
+    .modal-settings {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .modal-settings-info-container,
+    .modal-settings-image-container {
+        width: 100%;
+    }
+
+    .modal-settings-image {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 0;
+    }
+
+    .modal-settings-img-label{
+        margin-bottom: 40px;
+    }
+    .account-bio{
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 492px) {
+    .account {
+        width: 280px;
+    }
+
+    .account-posts-top {
+        gap: 10px;
+    }
+
+    .post-item {
+        width: 200px;
+        height: 200px;
+    }
+}

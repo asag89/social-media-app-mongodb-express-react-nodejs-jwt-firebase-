@@ -1,0 +1,18 @@
+
+.middle-wrapper{
+    width: 550px;
+    height: auto;
+}
+
+.middle-posts{
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+}
+
+/* media queries */
+@media(max-width: 980px){
+    .middle-wrapper{
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,274 @@
+.account-posts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.account-posts-top {
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    gap: 50px;
+    border-top: 0.5px solid rgb(216, 214, 214);
+    padding-top: 15px;
+}
+
+.account-posts-top>div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #999;
+}
+
+.account-posts-top>div:hover {
+    color: #333;
+}
+
+.post-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.post-item {
+    width: 266px;
+    height: 266px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+.post-item:hover .post-item-img {
+    opacity: 0.5;
+}
+
+.post-item:hover .post-item-delete-icon {
+    z-index: 1;
+}
+
+.post-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.post-item-delete-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #fff;
+    z-index: -5;
+    font-size: 28px !important;
+}
+
+.modal-post {
+    width: 1050px;
+    min-height: 80vh;
+    margin: 10vh auto;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-post-img-container {
+    width: 50%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.modal-post-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.modal-post-info-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.modal-post-info-top {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: rgb(224, 223, 223) 0.5px solid;
+}
+
+.modal-post-info-top-user {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.modal-post-username {
+    padding-right: 10px;
+}
+
+.modal-post-user-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.modal-post-more-icon {
+    cursor: pointer;
+}
+
+.modal-post-info {
+    width: 100%;
+    padding: 20px 20px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-post-owner {
+    padding-bottom: 20px;
+}
+
+.modal-post-owner-user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 600;
+}
+
+.modal-Post-text-field {
+    padding-top: 0px;
+}
+
+.modal-post-desc {
+    font-weight: 400;
+    display: inline;
+}
+
+.modal-post-hashtag {
+    padding: 5px 0 5px 60px;
+    font-size: 14px;
+    color: rgb(69, 118, 210);
+}
+
+.modal-post-ago {
+    padding: 0 0 20px 60px;
+    font-size: 14px;
+    color: #999;
+}
+
+.modal-post-user {
+    display: flex;
+    align-items: center;
+}
+
+.modal-post-comment-username {
+    font-weight: 600;
+}
+
+.modal-post-comment {
+    padding-left: 10px;
+}
+
+.modal-post-heart-icon {
+    font-size: 14px !important;
+    margin-left: auto;
+}
+
+.modal-post-info-bottom {
+    width: 100%;
+    padding: 20px 20px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-post-info-bottom-icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 5px;
+}
+
+.modal-post-info-bottom-icon {
+    font-size: 24px !important;
+}
+
+.modal-post-info-bottom-icon:last-child {
+    margin-left: auto;
+    font-size: 28px !important;
+}
+
+.modal-post-info-likes {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.modal-post-info-bottom-ago {
+    font-size: 14px;
+    color: #999;
+    padding-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.modal-post-comment-input{
+    padding: 5px 0;
+    width: 100%;
+}
+
+/* media queries */
+@media (max-width: 1030px) {
+    .main-profile {
+        gap: 60px;
+        justify-content: center;
+    }
+
+    .account {
+        width: 620px;
+    }
+
+    .post-list {
+        justify-content: center;
+    }
+
+    .modal-post {
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .modal-post-img-container,
+    .modal-post-info-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 786px) {
+    .post-list {
+        justify-content: center;
+    }
+
+    .account-posts-top {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 492px) {
+    .account-posts-top {
+        gap: 10px;
+    }
+
+    .post-item {
+        width: 200px;
+        height: 200px;
+    }
+}

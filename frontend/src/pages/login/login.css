@@ -1,0 +1,136 @@
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 60px auto;
+}
+.login-t{
+    display: flex;
+    justify-content: center; 
+    gap: 40px;
+}
+
+.login-img{
+    border-radius: 5px;
+    height: 600px;
+}
+
+.login-r{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-form{
+    width: 400px;
+    height: 500px;
+    padding: 40px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(206, 206, 206);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.login-form h1 {
+    font-size: 4.5rem;
+    font-weight: 400;
+    font-family: "Italianno";
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.login-form .input-grp {
+    position: relative;
+    width: 100%;
+}
+
+.login-form .input-grp input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    font-size: 16px;
+}
+
+.login-form .input-grp input:valid{
+    border-color: #0095f6;
+}
+
+.login-form .input-grp label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login-form .input-grp input:focus~label,
+.login-form .input-grp input:valid~label {
+    top: -18px;
+    left: 0;
+    color: #0095f6;
+    font-size: 12px;
+}
+
+.login-submit{
+    width: 80%;
+    background-color: #0095f6;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.login-submit:disabled{
+    background-color: rgb(178, 188, 208);
+    cursor: initial;
+}
+
+.login-forget{
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-to-register-page{
+    padding: 25px 50px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(206, 206, 206);
+    display: flex;
+    justify-content: center;
+}
+
+.login-to-register-page span{
+    color: #0095f6;
+    font-weight: 500;
+}
+
+/* media queries */
+@media(max-width:880px){
+    .login-img{
+        display: none;
+    }
+    .login .footer{
+        width: 400px;
+        text-align: center;
+    }
+}
+
+@media(max-width:460px){
+    .login-form{
+        width: 320px;
+    }
+}
